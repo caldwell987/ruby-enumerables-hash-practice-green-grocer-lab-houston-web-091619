@@ -15,15 +15,6 @@ def consolidate_cart(cart)
   new_cart
 end
 
-# apply coupon to the cart,
-# adds a new key, value pair to the cart hash called 'ITEM NAME W/COUPON'
-# adds the coupon price to the property hash of couponed item
-# adds the count number to the property hash of couponed item
-# removes the number of discounted items from the original item's count
-# remembers if the item was on clearance
-# accounts for when there are more items than the coupon allows
-# doesn't break if the coupon doesn't apply to any items
-
 def apply_coupons(cart, coupons)
   #doesn't break if there is no coupon
   return cart if coupons == []
