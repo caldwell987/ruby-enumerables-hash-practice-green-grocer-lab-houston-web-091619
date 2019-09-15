@@ -150,7 +150,7 @@ describe "Grocer" do
         two_coupon_result = apply_coupons(consol_cart, [coupon, coupon])
 
         expect(two_coupon_result["AVOCADO"][:count]).to eq(1)
-        expect(two_coupon_result["AVOCADO W/COUPON"][:price]).to eq(2.5)#_______
+        expect(two_coupon_result["AVOCADO W/COUPON"][:price]).to eq(5.0)#_______
         expect(two_coupon_result["AVOCADO"][:price]).to eq(3.00)
         expect(two_coupon_result["AVOCADO W/COUPON"][:count]).to eq(2)
       end
