@@ -94,7 +94,7 @@ describe "Grocer" do
 
         expect(cheese_result["CHEESE"][:price]).to eq(6.50)
         expect(cheese_result["CHEESE"][:count]).to eq(2)
-        expect(cheese_result["CHEESE W/COUPON"][:price]).to eq(5.00)
+        expect(cheese_result["CHEESE W/COUPON"][:price]).to eq(15.00)
         expect(cheese_result["CHEESE W/COUPON"][:count]).to eq(3)
         expect(cheese_result["CHEESE W/COUPON"][:clearance]).to eq(false)
       end
