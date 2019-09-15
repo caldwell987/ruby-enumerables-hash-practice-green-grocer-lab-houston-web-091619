@@ -12,6 +12,7 @@ def consolidate_cart(cart)
   hash
 end
 
+
 def apply_coupons(cart, coupons)
   hash = cart
   coupons.each do |coupon_hash|
@@ -42,7 +43,7 @@ end
 def apply_clearance(cart)
   cart.each do |item, price_hash|
     if price_hash[:clearance] == true
-      price_hash[:price] = (price_hash[:price] * 0.8).round(2)
+      price_hash[:price] = (price_hash[:price] * 0.8).round(1)
     end
   end
   cart
