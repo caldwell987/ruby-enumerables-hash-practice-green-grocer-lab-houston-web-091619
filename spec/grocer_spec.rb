@@ -1,4 +1,4 @@
-require_relative 'grocer'
+#require_relative 'grocer'
 
 
 describe "Grocer" do
