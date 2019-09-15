@@ -1,4 +1,4 @@
-
+require_relative 'grocer'
 def consolidate_cart(cart)
   hash = {}
   cart.each do |item_hash|
